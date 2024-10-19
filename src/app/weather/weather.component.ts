@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { environment } from '../../environments/environment.development';
+import { Country } from '../country/Country';
 
 interface WeatherForecast {
   date: string;
@@ -17,7 +18,7 @@ interface WeatherForecast {
   styleUrl: './weather.component.scss'
 })
 export class WeatherComponent implements OnInit {
-  public forecasts: WeatherForecast[] = [];
+  public countries: Country[] = [];
 
   constructor(private http: HttpClient) {}
 
