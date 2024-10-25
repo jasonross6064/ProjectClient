@@ -18,7 +18,7 @@ interface WeatherForecast {
   styleUrl: './weather.component.scss'
 })
 export class WeatherComponent implements OnInit {
-  public countries: Country[] = [];
+  public forecasts: WeatherForecast[] = [];
 
   constructor(private http: HttpClient) {}
 

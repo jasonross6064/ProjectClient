@@ -10,8 +10,8 @@
     </thead>
     <tbody>
       @for (country of countries; track country.id) {
-        <tr>
-          <td>  <a [routerLink]="['/countrypopulation', country.id]"> {{ country.id }} </a> </td>
+        <tr ngFor="let country of countries">
+          <td>{{country.id}} </td>
           <td>{{ country.name }}</td>
           <td>{{ country.iso2 }}</td>
           <td>{{ country.iso3 }}</td>
