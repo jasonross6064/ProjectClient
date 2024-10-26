@@ -13,8 +13,6 @@ import { RouterLink } from '@angular/router';
 })
 export class CountryComponent implements OnInit{
   public countries: Country[] = [];
-
-  
   constructor(private http: HttpClient) {}
   ngOnInit(): void {
     
